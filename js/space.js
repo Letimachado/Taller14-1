@@ -28,9 +28,9 @@ btnBuscar.addEventListener('click', async () => {
       const description = imageData.description || 'No hay descripción disponible';
       const date = new Date(imageData.date_created).toLocaleDateString();
       const card = document.createElement('div');
-      card.classList.add('card', 'mb-3');
+      card.classList.add('card', 'col-sm-3', 'm-5');
       card.innerHTML = `
-        <img src="${imageLink}" class="card-img-top" alt="${title}">
+        <img src="${imageLink}" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">${title}</h5>
           <p class="card-text">${description}</p>
